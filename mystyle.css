@@ -1,3 +1,10 @@
+#header {
+width: 100%;
+background-color:black;
+height: 80px;
+position: fixed;
+margin-top: 0px;
+}
 body{
 margin: 0;
 padding: 0;
@@ -146,9 +153,9 @@ float: left;
 padding-left: 21px;
 }
 
-#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Roboto'; }
-#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
-#nav li a:hover { color: #fff; opacity:1; }
+#nav li a { color: white; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Roboto'; }
+#nav li a.active { color: white; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: white; opacity:1; }
 #slide1, #slide2{ width: 100%; }
 #slide1{
 background:white;
