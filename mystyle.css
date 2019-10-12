@@ -31,9 +31,20 @@ padding: 0;
 z-index: 1;
 position: relative;
 }
+p {
+  font-family: Roboto;
+  font-weight: light;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+  color:black;
+}
 wh {
 font-family: Roboto;
-font-weight: normal;
+font-weight: light;
 font-size: 20px;
 text-align: center;
 margin: 5px 0;
@@ -86,8 +97,19 @@ position: relative;
      font-family: Roboto;
      font-weight: normal;
 }
+div.polaroid {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
 table {
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 td {
   height: 100px;
@@ -110,13 +132,7 @@ ul {
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 960px; }
 .clear { clear: both; }
-#header {
-width: 100%;
-background: black;
-height: 80px;
-position: fixed;
-margin-top: 0px;
-}
+
 #nav { width: 410px; float: right; margin-top: 20px; }
 #nav ul{
 list-style: none;
