@@ -1,0 +1,48 @@
+/* adapted from https://webdesign.tutsplus.com/tutorials/create-a-css-grid-image-gallery-with-blur-effect-and-interaction-media-queries--cms-32287 */
+body {
+  padding: 20px;
+  font-family: Roboto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ grid-gap: 1em;
+}
+
+.image {
+ position: relative;
+}
+
+.image-title {
+ font-size: 15;
+ text-decoration: none;
+ z-index: 1;
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ transition: opacity .5s;
+ background: rgba(90,0,10,0.4);
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.image:hover .image-title {
+ opacity: 1;
+}
+.image img {
+  filter: blur(0px);
+}
+img {
+  width: 100%;
+  height: auto;
+}
