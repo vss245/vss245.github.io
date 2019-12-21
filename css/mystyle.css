@@ -1,185 +1,191 @@
-#header {
-width: 100%;
-background-color:black;
-height: 80px;
-position: fixed;
-margin-top: 0px;
-}
-body{
-margin: 0;
-padding: 0;
-width: 100%;
-}
-h1 {
-font-family:"Roboto";
-font-weight:normal;
-font-size: 55px;
-text-align: center;
-color: black;
-margin: 0;
-padding: 0;
-}
-h2 {
-font-family:"Roboto";
-font-weight: normal;
-font-size: 40px;
-text-align: center;
-color: black;
-margin: 0;
-padding: 0;
-}
-h3 {
-font-family: Roboto;
-font-weight: normal;
-font-size: 20px;
-text-align: center;
-margin: 5px 0;
-padding: 0;
-z-index: 1;
-position: relative;
-}
-p {
-  font-family: Roboto;
-  font-weight: light;
-  font-size: 20px;
-  text-align: center;
-  margin: 5px 0;
-  padding: 0;
-  z-index: 1;
-  position: relative;
-  color:black;
-}
-wh {
-font-family: Roboto;
-font-weight: light;
-font-size: 20px;
-text-align: center;
-margin: 5px 0;
-padding: 0;
-z-index: 1;
-position: relative;
-color:white;
-}
-whs {
-font-family: Roboto;
-font-weight: normal;
-font-size: 16px;
-text-align: center;
-margin: 5px 0;
-padding: 0;
-z-index: 1;
-position: relative;
-color:white;
-}
-h4 {
-font-family:"Roboto";
-font-weight: normal;
-font-size: 40px;
-text-align: center;
-color: white;
-margin: 0;
-padding: 0;
-}
-h5 {
-font-family: Roboto;
-font-weight: normal;
-font-size: 20px;
-text-align: left;
-margin: 5px 0;
-padding: 0;
-z-index: 1;
-position: relative;
-}
-.column {
-     width:300px;
-     padding: 20px;
-     float:left;
-     font-family: Roboto;
-     font-weight: normal;
-}
-.row {
-     width:800px;
-     padding: 20px;
-     float:left;
-     font-family: Roboto;
-     font-weight: normal;
-}
-div.polaroid {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-div.polaroidsmall {
-  width: 25%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-div.container {
-  text-align: center;
-  padding: 10px 20px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  align:center;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-  /*border: 1px solid white;*/
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-td {
-  height: 100px;
-  width:500px;
+
+/* end of reset */
+
+body {
+	font: normal normal 400;
+	font-size: 80%;
+	line-height: 1.5em;
+	/*also written as...  font: normal normal 400 100%/1.5em;*/
+	font-family: Verdana,sans-serif;
+	margin-top: 1em;
+	margin-left: 1em;
 }
-a {
-  font-family:"Roboto";
-  font-weight: normal;
-  font-size: 16px;
-  text-align: center;
-  color: black;
-  margin: 0;
-  text-decoration: none;
-  border-bottom: 1px dotted #999;
-  padding: 0;
+
+p {
+	position: relative;
+	left: 33%;
+	margin-bottom: 0.7em;
+	margin-right: 0;
+	width: 65%;
 }
+
+code {
+	font: normal normal;
+	font-size: 85%;
+	/*line-height: 1em;*/
+	font-family: Menlo,monospace,sans-serif;
+	color: #aaa;
+}
+
+p code {
+	position: absolute;
+	left: -14%;
+}
+
+
 ul {
-  list-style-type: circle;
-}
-.center { margin: 0 auto; }
-.content{ margin: 0 auto; width: 960px; }
-.clear { clear: both; }
-
-#nav { width: 410px; float: right; margin-top: 20px; }
-#nav ul{
-list-style: none;
-display: block;
-margin: 0 auto;
-list-style: none;
-}
-#nav li{
-margin-top: 9px;
-float: left;
-padding-left: 21px;
+	position: relative;
+	left: 33%;
+	width: 65%;
+	margin-bottom: 1.5em;
+	margin-top: -0.5em;
 }
 
-#nav li a { color: white; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Roboto'; }
-#nav li a.active { color: white; opacity:1; border-bottom: 2px solid #fff; }
-#nav li a:hover { color: white; opacity:1; }
-#slide1, #slide2{ width: 100%; }
-#slide1{
-background:white;
-height: 600px;
-margin: 0;
-padding: 100px 0 260px;
-background-size: cover;
+li {
+	/*second line indent*/
+	padding-left: 1.25em;
+	text-indent: -1.25em;
+	/*color: #777;*/
 }
-#slide2{
-background-color: #e3edfc;
-height: 600px;
-margin: 0 0;
-padding: 100px 0;
+li:before {
+	content: "-";
+	position: relative;
+	left: -0.25em;
 }
-#slide3{
-background: black;
-height: 800px;
-padding: 100px 0 0 0;
-background-size: cover;
-color:white;
+
+li ul {
+	position: relative;
+	left: 0;
+	width: 100%;
+	margin-top: 0.25em;
 }
+
+h1,h2,h3,h4 {
+	font-weight: 400;
+	font-family: Cousine,Verdana,sans-serif;
+	width: 65%;
+}
+
+h1 {
+	text-align: left;
+	font-size: 3em;
+	line-height: 1em;
+	position: relative;
+	left: 33%;
+}
+
+h1+p {
+	/*subtitle*/
+	font-style: italic;
+	font-size: 110%;
+}
+
+h2 {
+	font-size: 1.1em;
+	color: #DD7676;
+	margin-top: 3em;
+	position: relative;
+	top: 1.4em;
+	text-align: right;
+	width: 20%;
+}
+
+h3 {
+	font-size: 1em;
+	line-height: 2em;
+	position: relative;
+	top: 1.7em;
+	text-align: center;
+	width: 30%;
+}
+
+a {
+	color: inherit;
+	/*text-decoration:none*/
+}
+
+a:hover {
+	color:#91A0D3
+}
+
+#webaddress {
+	margin-top: 1em;
+	position: relative;
+	left: 33%;
+	color: #aaa;
+	font-family: Menlo,monospace,sans-serif;
+	font-size: 80%;
+}
+
+#webaddress a {
+	text-decoration: none;
+}
+
+em {
+	font-weight: bold;
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#address {
+	display: none;
+}
+
+
+
+/*
+@media only screen and (max-width: 480px) {
+	make one column somehow...
+}*/
