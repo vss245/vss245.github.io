@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: vss245.github.io/sitemap.xml

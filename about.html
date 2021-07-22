@@ -1,29 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-   <title>about</title>
-   <link rel="stylesheet" href="mystyle.css">
-   <link rel="shortcut icon" href="img/favicon.png" />
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150449675-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-150449675-1');
-</script>
-</head>
-<body>
-  <center>
-  <br>
-  <h3 style="font-weight: bold">about me</h3>
-  <br>
-  <br>
-  <br>
-  <br>
-  <p><h3 style="width: 500px;">Hi, I’m Veronika. I'm a computational neuroscientist. I have a BSc in Neuroscience from NYU (with a minor in Computer Science) and a MSc in Neural Systems and Computation from the University of Zürich and ETH Zürich. I’m interested in brain oscillations, cognition, memory, mental disorders and other things. I’m currently at Charité Berlin working on functional connectivity in EEG/MEG. You can read more about my previous research <a href="/research.html">here</a>. When I'm not researching, I do <a href="/other.html">other</a> things, like coding for fun (like a nerd) or making music. </h3></p></center>
-</body>
-</html>
+---
+layout: about
+---
+
+<section>
+    <!-- The Timeline -->
+
+    <ul class="timeline">
+
+        <!-- Item 1 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="flag">Misc training</span>
+                    <span class="time-wrapper"><span class="time">2020</span></span>
+                </div>
+                <div class="desc">
+                    I attended <a href="https://neuromatchacademy.org">Neuromatch Academy</a> in summer of 2020, which was a very cool experience. I learned a lot about modeling, Bayesian statistics, reinforcement learning and deep learning within neuroscience. My group did a <a href="https://github.com/vss245/nma_code/"> short research project</a> on connectivity differences in mentalizing based on fMRI data.
+                </div>
+            </div>
+        </li>
+
+        <!-- Item 2 -->
+        <li>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="flag">Current research</span>
+                    <span class="time-wrapper"><span class="time">2020 - present</span></span>
+                </div>
+                <div class="desc">
+                  Currently, I am working on EEG and MEG connectivity in the resting state. Connectivity (statistical dependencies in signals between brain regions) may shed light on the inherent organization of brain circuits and how things go awry in aging and disease.<br><br>
+                </div>
+            </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="flag">Master's degree</span>
+                    <span class="time-wrapper"><span class="time">2016 - 2019</span></span>
+                </div>
+                <div class="desc">
+                    In my Master's thesis, I got access to a really cool clinical <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6476542/">intracranial EEG</a> dataset. I focused on theta and gamma oscillations (involved in learning and memory) and found that they might behave differenly in humans as compared to animals, which has implications for fear and anxiety research (subject to caveats and assumptions, of course). Some of the MATLAB code from this project is <a href="https://github.com/vss245/ieeg-code">here</a>.
+                </div>
+            </div>
+        </li>
+
+
+        <!-- Item 4 -->
+        <li>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="flag">Undergraduate studies</span>
+                    <span class="time-wrapper"><span class="time">2012 - 2016</span></span>
+                </div>
+                <div class="desc">
+                    In my undergrad, I did several research assistantships in cognitive neuroscience labs, doing things from setting up polysomnography equipment at people's houses at night to taking care of and training a bunch of laboratory mice, in addition to learning the basics of biology, chemistry, physics, neuroscience, statistics and other fun stuff.
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+</section>

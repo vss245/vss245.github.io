@@ -1,0 +1,85 @@
+site: vss245.github.io
+title: veronika s.
+description: >-
+  personal website
+googlewebfonts: Fira+Code:wght@400;500;700
+lang: en-US
+timezone: Rome
+repo: https://github.com/vss245/vss245.github.io # site repo [optional]
+data-theme: light # default theme "dark" | "light"
+
+author:
+  name: vss245
+  bio: just a minimalist, personal blog
+  username: vss245 # general username
+  github: vss245 # github username
+  twitter: vss245 # twitter username
+  email:  # email adress
+
+# URL settings
+url: "vss245.github.io" #
+baseurl: #"/Gesko" # leave blank if not wishd
+permalink: "vss245.github.io"
+permalink: pretty 
+
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
+
+

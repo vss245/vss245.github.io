@@ -1,42 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-   <title>veronika s.</title>
-   <link rel="stylesheet" href="mystyle.css">
-   <link rel="shortcut icon" href="img/favicon.png" />
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150449675-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-150449675-1');
-</script>
-   </head>
-   <body>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <center>
-    <img src="img/waves.png" width="200">
-    <h3 align="center"></h3>
-    <!--<a href="cv.html" style="color:#B86B60">CV</a><br>-->
-    <!--<a href="about.html" style="color:#7278A7">about me</a>-->
-    <h3 style="width: 500px;">Hi, I’m Veronika. I'm a computational neuroscientist. I have a BSc in Neuroscience from NYU (with a minor in Computer Science) and a MSc in Neural Systems and Computation from the University of Zürich and ETH Zürich. I’m interested in analyzing brain and other data, cognition, memory, mental disorders and coding. I’m currently at Charité Berlin working on functional connectivity in EEG/MEG. You can read more about my previous research <a href="/research.html">here</a>. When I'm not researching, I like coding for fun (like a nerd), making music and writing on neuroscience and adjacent topics. </h3>
-    <br><br>
-    <a href="research.html" style="color:#7278A7">research</a>
-    <a href="other.html" style="color:#7278A7">other stuff</a>
-    <br><br>
-    <a href="https://twitter.com/vss245" style="color:#7278A7">twitter</a>
-    <a href="https://github.com/vss245" style="color:#7278A7">github</a>
-    <br><br>
-    <br><br>
-    <br><br>
-    <a class="twitter-timeline" data-width="300" data-height="300" data-link-color="#E81C4F" href="https://twitter.com/vss245?ref_src=twsrc%5Etfw">Recent tweets</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </center>
-    </body>
-    </html>
+---
+layout: default
+---
+<section id="intro">
+    <div class="flex-row-between">
+        <h1>👋</h1>
+        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+            <div></div>
+        </button>
+    </div>
+    <div class="bio">
+        Hi, I’m Veronika. I’m interested in analyzing brain and other data, cognition, memory, mental disorders and coding. I have a BSc in Neuroscience from NYU (with a minor in Computer Science) and a MSc in Neural Systems and Computation from the University of Zürich and ETH Zürich. I’m currently at Charité Berlin working on functional connectivity in EEG/MEG. You can read more about my previous research <a href="{{ site.baseurl }}/about"> here</a>. When I'm not researching, I like coding for fun (like a nerd), making music and art, and writing on neuroscience and adjacent topics.
+    </div>
+
+
+</section>
+
+<!--<div class="search-article">
+    <label for="search-input" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </label>
+    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
+    <ul id="search-results"></ul></div>-->
+
+<section class="posts" id="Blog">
+    <h2>BLOG</h2>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
