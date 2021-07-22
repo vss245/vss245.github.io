@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>veronika s.</title>
+ <title>veronika shamova</title>
  <link href="vss245.github.io/atom.xml" rel="self"/>
  <link href="vss245.github.io/"/>
- <updated>2021-07-22T15:07:41+00:00</updated>
+ <updated>2021-07-22T15:58:28+00:00</updated>
  <id>vss245.github.io</id>
  <author>
    <name>vss245</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Thoughts on resting state activity and biomarkers</title>
-   <link href="vss245.github.io/2021/07/21/resting-state"/>
-   <updated>2021-07-21T00:00:00+00:00</updated>
-   <id>vss245.github.io/2021/07/21/resting-state</id>
+   <link href="vss245.github.io/2021/06/15/resting-state"/>
+   <updated>2021-06-15T00:00:00+00:00</updated>
+   <id>vss245.github.io/2021/06/15/resting-state</id>
    <content type="html">&lt;p&gt;I figured I would start writing with a small post on the subject that I have been interested in lately - resting state activity in the brain (thanks to reading &lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S2352154621000875&quot;&gt;this&lt;/a&gt; paper by Laumann and Snyder).&lt;/p&gt;
 
 &lt;p&gt;Some historical information first, if only to organize my thoughts: even though electrophysiology started with a discovery of spontaneous electrical activity in the brain (Hans Berger recording alpha waves all the way back in &lt;a href=&quot;https://www.sciencenews.org/article/hans-berger-telepathy-neuroscience-brain-eeg&quot;&gt;1924&lt;/a&gt; or so), neuroscientists and cognitive scientists weren’t much concerned with what the brain does when it’s not doing anything at first, focusing on task-related activity.&lt;/p&gt;
