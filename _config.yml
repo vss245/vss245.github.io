@@ -1,5 +1,5 @@
 site: vss245.github.io
-title: veronika s.
+title: veronika shamova
 description: >-
   personal website
 googlewebfonts: Fira+Code:wght@400;500;700
@@ -18,7 +18,7 @@ author:
 
 # URL settings
 url: "vss245.github.io" #
-baseurl: #"/Gesko" # leave blank if not wishd
+baseurl: "/vss245.github.io" # leave blank if not wishd
 permalink: "vss245.github.io"
 permalink: pretty 
 
