@@ -17,19 +17,19 @@ layout: compress
 
 
   <script>
-    function setTheme(theme) {
-      if (theme === "dark") {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        window.localStorage.setItem('theme', 'dark');
-        document.getElementById("theme-toggle").classList.add('sun');
-        document.getElementById("theme-toggle").classList.remove('moon');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        window.localStorage.setItem('theme', 'light');
-        document.getElementById("theme-toggle").classList.add('moon');
-        document.getElementById("theme-toggle").classList.remove('sun');
-      }
-    }
+    // function setTheme(theme) {
+    //   if (theme === "dark") {
+    //     document.documentElement.setAttribute('data-theme', 'dark');
+    //     window.localStorage.setItem('theme', 'dark');
+    //     document.getElementById("theme-toggle").classList.add('sun');
+    //     document.getElementById("theme-toggle").classList.remove('moon');
+    //   } else {
+    //     document.documentElement.setAttribute('data-theme', 'light');
+    //     window.localStorage.setItem('theme', 'light');
+    //     document.getElementById("theme-toggle").classList.add('moon');
+    //     document.getElementById("theme-toggle").classList.remove('sun');
+    //   }
+    // }
 
     setTheme('light');
     //let theme = localStorage.getItem('theme');
@@ -38,15 +38,15 @@ layout: compress
 
     //setTheme(theme);
 
-    function modeSwitcher() {
-      let currentMode = document.documentElement.getAttribute('data-theme');
-
-      if (currentMode === "dark") {
-        setTheme('light');
-      } else {
-        setTheme('dark');
-      }
-    }
+    //function modeSwitcher() {
+    //   let currentMode = document.documentElement.getAttribute('data-theme');
+    //
+    //   if (currentMode === "dark") {
+    //     setTheme('light');
+    //   } else {
+    //     setTheme('dark');
+    //   }
+    // }
   </script>
 
 
@@ -57,21 +57,25 @@ layout: compress
   <div class="social-footer-icons">
     <a href="https://github.com/vss245" title="Github profile" target="_blank"
       rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a href="{{site.url}}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
-        class="fa fa-rss" aria-hidden="true"></i></a>
-    <a href="https://github.com/P0WEX/Gesko" title="Template code" target="_blank" rel="noopener noreferrer"><i
+      <a href="https://www.linkedin.com/in/veronika-shamova-ab5289217/" title="LinkedIn profile" target="_blank"
+        rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/vss245" title="Twitter profile" target="_blank"
+        rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <!-- <a href="{{site.url}}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
+        class="fa fa-rss" aria-hidden="true"></i></a> -->
+    <a href="https://github.com/P0WEX/Gesko" title="Site template" target="_blank" rel="noopener noreferrer"><i
         class="fa fa-code" aria-hidden="true"></i></a>
   </div>
 </footer>
 
 
 {% if page.url == '/' %}
-  <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
+  <script src="{{ site.url }}/assets/js/simple-jekyll-search.js"></script>
   <script>
     var sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('search-results'),
-      json: '{{ site.baseurl }}/search.json',
+      json: '{{ site.url }}/search.json',
       searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
       noResultsText: 'No results found..',
       limit: 10,
