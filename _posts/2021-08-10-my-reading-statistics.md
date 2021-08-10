@@ -6,7 +6,7 @@ At some point in my life, I became obsessed with tracking all sorts of statistic
 
 Inspired by some dashboards I saw online, I decided to export my library and dig into my reading data a little bit. I used Jupyter Notebooks and Python (mainly pandas and matplotlib). The notebook is [here](https://github.com/vss245/books-analysis/).
 
-![my reading stats](/Users/nika/vss245.github.io/assets/img/dash.png)
+<img src="{{ site.baseurl }}/assets/img/dash.png">
 
 Interesting insights:
 
