@@ -2,7 +2,7 @@
 title: Analyzing my reading habits
 ---
 
-At some point in my life, I became obsessed with tracking all sorts of statistics about my life, for reasons unknown even to me. A lot of the habits didn’t stick or became too cumbersome to keep up, but I still use [Goodreads](goodreads.com), despite the borderline unusable interface and a questionable color scheme. 
+At some point in my life, I became obsessed with tracking all sorts of personal statistics, for reasons unknown even to me. A lot of the habits didn’t stick or became too cumbersome to keep up, but I still use [Goodreads](https://goodreads.com), despite the borderline unusable interface and a questionable color scheme. 
 
 Inspired by some dashboards I saw online, I decided to export my library and dig into my reading data a little bit. I used Jupyter Notebooks and Python (mainly pandas and matplotlib). The notebook is [here](https://github.com/vss245/books-analysis/).
 
