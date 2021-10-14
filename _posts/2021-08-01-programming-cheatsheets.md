@@ -1,5 +1,6 @@
 ---
 title: Programming cheatsheets
+tags: programming
 ---
 
 Since I have to switch or pick up programming languages occasionally and confusing features between them is getting pretty annoying, here are some small primers on basic syntax and features that I wrote to have a quick reference:
