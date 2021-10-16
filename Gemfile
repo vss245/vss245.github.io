@@ -4,4 +4,5 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-relative-links'
 gem "webrick", "~> 1.7"
+gem 'jekyll-tagging'
 #gem "addressable", ">= 2.8.0"
