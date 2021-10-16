@@ -23,7 +23,7 @@ Originally proposed as an insanely ambitious large scale project that would unde
 
 This book was sometimes criticized for reminding people that scientists aren’t paragons of objectivity and can occasionally be human with all the resulting irrationality, which is something I often have to argue with people about. It never feels good to have to knock science off its pedestal and the balance between eroding people’s trust in science and instilling healthy skepticism can be pretty hard.
 
-<img src="/Users/nika/vss245.github.io/assets/img/behav.png" alt="behav" style="zoom:50%;" />
+<img src="../assets/img/behav.png" alt="figure from Gomez-Marin et al, 2021" style="zoom:50%;" />
 
 <p style="text-align: center;font-style: italic;"> I want to hand this image out at conferences (Figure 2 from  Gomez-Marin and Ghazanfar, 2021)</p>
 
@@ -39,7 +39,7 @@ The famed replication crisis has caused an avalanche of criticism on how we appr
 
 This is a much less heavy topic than “oof, science kind of sucks”, but is probably equally important. Awkward, cramped and hard to understand visualizations are the bread-and-butter of science, but it doesn’t have to be this way. The importance of good design also borders more serious issues, such as inaccessibility of scientific findings to laypeople and bad science journalism. 
 
-<img src="../assets/img/graph1.png" alt="img" style="zoom:50%;" />
+<img src="../assets/img/graph1.png" alt="graph from Corell, 2021" style="zoom:50%;" />
 
 <p style="text-align: center;font-style: italic;"> Color me convinced! (Figure from Corell, 2021)</p>
 
