@@ -44,7 +44,7 @@ html[data-theme="light"] {
 
 	background-color: rgb(255, 255, 255);
 
-	
+
 
 	#theme-toggle div {
 		position: relative;
@@ -353,7 +353,7 @@ main {
   position: initial;
 
   .social-footer-icons {
-     
+
     .fa {
       font-size: 1.3rem;
       color: #a9a9a9;
@@ -407,14 +407,14 @@ figcaption {
 }
 
 ::selection {
-background-color: #fffba0;
-color: #333;
+background-color: #ebc2ff;
+color: #1a1919;
 }
 
 
 .search-article {
   position: relative;
- 
+
 
   label[for="search-input"] {
     position: relative;
@@ -500,7 +500,7 @@ color: #333;
       padding-left: 20px;
     }
   }
-} 	
+}
 
 
 .tags ul {
@@ -747,6 +747,6 @@ $link-color: var(--link-color);
     background: var(--code-bg-color);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
-    
+
   }
 }
