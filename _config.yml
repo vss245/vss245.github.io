@@ -1,16 +1,15 @@
 site: vss245.github.io
-title: Veronika Shamova
-description: >-
-  personal website
-googlewebfonts: Fira+Code:wght@400;500;700
+title: Veronika Shamova's website
+description: My personal website and blog about my research and other things.
+googlewebfonts: Verdana:wght@400;500;700
 lang: en-US
 timezone: Rome
 repo: https://github.com/vss245/vss245.github.io # site repo [optional]
 data-theme: light # default theme "dark" | "light"
 
 author:
-  name: vss245
-  bio: just a minimalist, personal blog
+  name: Veronika Shamova
+  bio: 
   username: vss245 # general username
   github: vss245 # github username
   twitter: vss245 # twitter username
@@ -50,6 +49,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-seo-tag
 
 collections:
   pages:
