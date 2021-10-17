@@ -17,7 +17,7 @@ author:
   email:  # email adress
 
 # URL settings
-url: "https://vss245.github.io" #
+url: "vss245.github.io" #
 baseurl: "https://vss245.github.io" #
 permalink: "vss245.github.io"
 permalink: pretty 
