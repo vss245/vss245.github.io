@@ -23,7 +23,7 @@ The author calls for increased collaboration within science, as well as the crea
 
 This book was sometimes criticized for reminding people that scientists aren’t paragons of objectivity and can occasionally be human with all the resulting irrationality. The balance between eroding people’s trust in science and instilling healthy skepticism can be pretty hard.
 
-<img src="{{ site.url }}/assets/img/behav.png" alt="figure from Gomez-Marin et al, 2021" style="zoom:50%;" />
+<img src="{{ site.baseurl }}/assets/img/behav.png" alt="figure from Gomez-Marin et al, 2021" style="zoom:50%;" />
 
 <p style="text-align: center;font-style: italic;"> I want to hand this image out at conferences (Figure 2 from  Gomez-Marin and Ghazanfar, 2021)</p>
 
@@ -35,7 +35,7 @@ Other fields have also been getting their fair share of criticism from the insid
 
 This is a much less heavy topic than “oof, science can be bad”, but is probably equally important. Awkward, cramped and hard to understand visualizations are the bread-and-butter of science, but it doesn’t have to be this way. The importance of good design also borders more serious issues, such as inaccessibility of scientific findings to laypeople and bad science journalism. 
 
-<img src="{{ site.url }}/assets/img/graph1.png" alt="graph from Corell, 2021" style="zoom:50%;" />
+<img src="{{ site.baseurl }}/assets/img/graph1.png" alt="graph from Corell, 2021" style="zoom:50%;" />
 
 <p style="text-align: center;font-style: italic;"> Color me convinced! (Figure from Corell, 2021)</p>
 
