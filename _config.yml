@@ -17,7 +17,7 @@ author:
 
 # URL settings
 url: "vss245.github.io" #
-baseurl: #"https://vss245.github.io" #
+baseurl: "https://vss245.github.io" #
 permalink: "vss245.github.io"
 permalink: pretty 
 
@@ -50,6 +50,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-seo-tag
+  - jekyll-tagging
+
+tag_page_layout: tag
+tag_page_dir: baseurl/tag
 
 collections:
   pages:
