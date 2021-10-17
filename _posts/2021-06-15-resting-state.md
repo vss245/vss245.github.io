@@ -1,6 +1,5 @@
 ---
 title: Thoughts on resting state activity and biomarkers
-tags: neuroscience
 ---
 
 I figured I would start writing with a small post on the subject that I have been interested in lately - resting state activity in the brain (thanks to reading [this](https://www.sciencedirect.com/science/article/pii/S2352154621000875) paper by Laumann and Snyder).
