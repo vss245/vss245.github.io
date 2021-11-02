@@ -17,7 +17,7 @@ author:
 
 # URL settings
 url: "vss245.github.io" #
-baseurl: "https://vss245.github.io" #
+baseurl: "vss245.github.io" #
 permalink: "vss245.github.io"
 permalink: pretty 
 
