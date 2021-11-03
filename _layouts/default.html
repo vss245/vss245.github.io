@@ -1,88 +1,34 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
+<html>
 
+  <head>
+    {% if page.redirect %}<meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />{% endif %}
+    {% include head.html %}
+  </head>
 
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
+    <!-- Header -->
 
-<body>
-  <main>
-    {% include anchor_headings.html html=content anchorBody="#" %}
-  </main>
+    {% include header.html %}
 
+    <!-- Content -->
 
+    <div class="container mt-5">
+      {{ content }}
+    </div>
 
-  <script>
-    // function setTheme(theme) {
-    //   if (theme === "dark") {
-    //     document.documentElement.setAttribute('data-theme', 'dark');
-    //     window.localStorage.setItem('theme', 'dark');
-    //     document.getElementById("theme-toggle").classList.add('sun');
-    //     document.getElementById("theme-toggle").classList.remove('moon');
-    //   } else {
-    //     document.documentElement.setAttribute('data-theme', 'light');
-    //     window.localStorage.setItem('theme', 'light');
-    //     document.getElementById("theme-toggle").classList.add('moon');
-    //     document.getElementById("theme-toggle").classList.remove('sun');
-    //   }
-    // }
+    <!-- Footer -->
 
-    setTheme('light');
-    //let theme = localStorage.getItem('theme');
+    {% include footer.html %}
 
-    //theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
+  </body>
 
-    //setTheme(theme);
-
-    //function modeSwitcher() {
-    //   let currentMode = document.documentElement.getAttribute('data-theme');
-    //
-    //   if (currentMode === "dark") {
-    //     setTheme('light');
-    //   } else {
-    //     setTheme('dark');
-    //   }
-    // }
-  </script>
-
-
-
-</body>
-
-<footer class="social-footer">
-  <div class="social-footer-icons">
-    <a href="https://github.com/vss245" title="Github profile" target="_blank"
-      rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/veronika-shamova-ab5289217/" title="LinkedIn profile" target="_blank"
-        rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/vss245" title="Twitter profile" target="_blank"
-        rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <!-- <a href="{{site.url}}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
-        class="fa fa-rss" aria-hidden="true"></i></a> -->
-    <a href="https://github.com/P0WEX/Gesko" title="Site template" target="_blank" rel="noopener noreferrer"><i
-        class="fa fa-code" aria-hidden="true"></i></a>
-  </div>
-</footer>
-
-
-{% if page.url == '/' %}
-  <script src="{{ site.url }}/assets/js/simple-jekyll-search.js"></script>
-  <script>
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-      json: '{{ site.url }}/search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-      noResultsText: 'No results found..',
-      limit: 10,
-      fuzzy: true,
-    })
-  </script>
-  {% endif %}
-
+  {% include scripts/jquery.html %}
+  {% include scripts/bootstrap.html %}
+  {% include scripts/mansory.html %}
+  {% include scripts/misc.html %}
+  {% include scripts/mathjax.html %}
+  {% include scripts/analytics.html %}
 
 </html>

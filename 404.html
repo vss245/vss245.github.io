@@ -1,11 +1,9 @@
 ---
 layout: page
-title: "404: Page not found"
-permalink: 404.html
+permalink: /404.html
+title: "Page not found"
+description: "Looks like there has been a mistake. Nothing exists here."
+redirect: true
 ---
-<div class="flex-row-between">
-    <a href="{{ site.github.url }}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-</div>
-<p>
-😕 oops! wrong URL or this page doesn't exist yet, sorry about that 
-</p>
+
+<p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="{{ site.baseurl | prepend: site.url }}/">here</a>.</p>
