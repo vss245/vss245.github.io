@@ -2,7 +2,7 @@
 title: Analyzing my reading habits
 ---
 
-I track a lot of personal statistics (mood, movie watching, exercise), mostly because it motivates me and helps me feel a bit more grounded. For books, I use [Goodreads](https://goodreads.com), despite the borderline unusable interface and a questionable color scheme. 
+Tracking my data has always helped me keep up good habits. For books, I use [Goodreads](https://goodreads.com), despite the sometimes borderline unusable interface and a questionable color scheme.
 
 I decided to export my library and dig into my reading data a little bit. I used Jupyter Notebooks and Python (mainly pandas and matplotlib). The notebook is [here](https://github.com/vss245/books-analysis/).
 
