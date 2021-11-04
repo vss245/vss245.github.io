@@ -1,3 +1,3 @@
 my website
 
-theme: al-folio
+al-folio theme
