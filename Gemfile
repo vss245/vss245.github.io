@@ -15,5 +15,4 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'unicode_utils'
     gem 'webrick'
-    gem "nokogiri", ">= 1.12.5"
 end
