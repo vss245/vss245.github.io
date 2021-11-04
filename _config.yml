@@ -2,15 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Veronika Shamova # the website title (if blank, full name will be used instead)
 first_name: Veronika
 middle_name:
 last_name: Shamova
-email: veronika.shamova[at]charite[dot]de
+email: first_name[dot]last_name[at]charite[dot]de
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  My personal website
+  my personal website
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 icon: 🧠 # the emoji used as the favicon
 url: https://vss245.github.io # the base hostname & protocol for your site
@@ -50,25 +51,34 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: vss245 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: vss245 # your Twitter handle
-linkedin_username: veronika-shamova-ab5289217 # your LinkedIn user name
+linkedin_username: # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
 orcid_id: 0000-0002-1900-5157 # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
+blogger_url: # your blogger URL
+work_url: # work page URL
+keybase_username: # your keybase user name
+wikidata_id: # your wikidata id
+dblp_url: # your DBLP profile url
+stackoverflow_id: #your stackoverflow id
 
-rss_icon: false
+rss_icon: true
 
 contact_note: >
-  the best way to reach me is by email or on Twitter
+  i'm most easily reachable by e-mail or on Twitter
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
-#panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
+panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: veronika shamova's blog  # your blog must have a name for it to show up in the nav bar
-blog_description: personal website
+blog_name: blog # your blog must have a name for it to show up in the nav bar
+blog_description: a collection of random thoughts
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -76,7 +86,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: vss245 # put your disqus shortname
+disqus_shortname: veronika # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # -----------------------------------------------------------------------------
@@ -172,14 +182,14 @@ jekyll-archives:
 scholar:
 
   last_name: Shamova
-  first_name: [Veronika]
+  first_name: Veronika
 
   style: apa
   locale: en
 
-  source: #/_bibliography/
-  bibliography: #papers.bib
-  bibliography_template: #bib
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
@@ -224,7 +234,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    false  # enables google analytics
+enable_google_analytics:    true  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_mansory:             true   # enables automatic project cards arangement
 enable_math:                true   # enables math typesetting (uses MathJax)

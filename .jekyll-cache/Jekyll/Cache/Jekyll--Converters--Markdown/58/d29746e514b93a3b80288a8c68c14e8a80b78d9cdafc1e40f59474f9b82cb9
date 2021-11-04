@@ -1,0 +1,101 @@
+I"�<div class="projects">
+  
+  <!-- Display categorized projects -->
+    
+      <h2 class="category">work</h2>
+      
+      
+      <!-- Generate cards for each project -->
+      
+        <div class="grid">
+          
+            <div class="grid-item">
+  
+  <a href="/projects/msc/">
+  
+    <div class="card hoverable">
+      
+        
+
+
+<img src="/assets/resized/p1-1400x933.jpg" srcset="    /assets/resized/p1-480x320.jpg 480w,    /assets/resized/p1-800x533.jpg 800w,    /assets/resized/p1-1400x933.jpg 1400w,/ assets/img/p1.jpg 6000w" alt="project thumbnail" />
+
+      
+      <div class="card-body">
+        <h2 class="card-title text-lowercase">θ and γ waves in fear conditioning</h2>
+        <p class="card-text">my Master's thesis</p>
+        <div class="row ml-1 mr-1 p-0">
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+          
+            <div class="grid-item">
+  
+  <a href="/projects/phd/">
+  
+    <div class="card hoverable">
+      
+        
+
+
+<img src="/assets/resized/p2-1400x933.jpg" srcset="    /assets/resized/p2-480x320.jpg 480w,    /assets/resized/p2-800x533.jpg 800w,    /assets/resized/p2-1400x933.jpg 1400w,/ assets/img/p2.jpg 5184w" alt="project thumbnail" />
+
+      
+      <div class="card-body">
+        <h2 class="card-title text-lowercase">normative models of connectivity</h2>
+        <p class="card-text">some of my PhD work</p>
+        <div class="row ml-1 mr-1 p-0">
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+          
+        </div>
+      
+    
+      <h2 class="category">fun</h2>
+      
+      
+      <!-- Generate cards for each project -->
+      
+        <div class="grid">
+          
+            <div class="grid-item">
+  
+  <a href="/projects/gen/">
+  
+    <div class="card hoverable">
+      
+        
+
+
+<img src="/assets/resized/c-480x427.png" srcset="    /assets/resized/c-480x427.png 480w,/ assets/img/c.png 706w" alt="project thumbnail" />
+
+      
+      <div class="card-body">
+        <h2 class="card-title text-lowercase">generative art</h2>
+        <p class="card-text">making art and visualizations with code</p>
+        <div class="row ml-1 mr-1 p-0">
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+          
+        </div>
+      
+    
+
+  
+
+</div>
+:ET
