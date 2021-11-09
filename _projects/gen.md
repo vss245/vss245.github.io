@@ -7,4 +7,6 @@ importance: 3
 category: fun
 ---
 
-I’ve been learning JavaScript and some of its libraries to create small visualizations and games with code, such as various [cellular automata](https://openprocessing.org/sketch/1170289), [random walkers](https://openprocessing.org/sketch/935248) and a very rudimentary [game of snake](https://openprocessing.org/sketch/1250287). Work in progress, obviously :)
+I’ve been learning JavaScript and some of its libraries to [create small visualizations and games with code](https://openprocessing.org/user/193657/?view=sketches).
+
+{% responsive_image path: assets/img/c.jpg title: "game of life" class: "img-fluid rounded z-depth-1" %}
