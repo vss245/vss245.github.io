@@ -9,4 +9,4 @@ category: fun
 
 I’ve been learning JavaScript and some of its libraries to [create small visualizations and games with code](https://openprocessing.org/user/193657/?view=sketches).
 
-{% responsive_image path: assets/img/c.jpg title: "game of life" class: "img-fluid rounded z-depth-1" %}
+{% responsive_image path: assets/img/c.png title: "game of life" class: "img-fluid rounded z-depth-1" %}
