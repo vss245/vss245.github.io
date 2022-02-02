@@ -2,7 +2,7 @@
 
 layout: post
 title:  shitty future
-date:   2022-02-02 01:15:02
+date:   2022-01-30 00:15:02
 description: i’m not very optimistic
 tags: miscellaneous
 
