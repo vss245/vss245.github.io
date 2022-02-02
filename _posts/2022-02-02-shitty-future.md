@@ -1,3 +1,13 @@
+---
+
+layout: post
+title:  shitty future
+date:   2022-02-02 01:15:02
+description: i’m not very optimistic
+tags: miscellaneous
+
+---
+
 I’m tired of the future. The Twitter account [Shitty Future](https://twitter.com/Shitty_Future) perfectly encapsulates how I feel about the avalanche-like growth of tech (and hype). 
 
 Who doesn’t want a piece of artificial intelligence? It sounds so impressive. Intelligence can be somewhat loosely defined as the capacity for logic, abstract reasoning, decision-making, self-awareness and critical thinking. When you hear “artificial intelligence”, you might even imagine an artificial being possessing these qualities, but here’s where you might be wrong.
