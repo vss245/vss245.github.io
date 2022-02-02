@@ -12,7 +12,7 @@
   Veronika Shamova
 
 
-  | analyzing my reading statistics
+  | 
 
 </title>
 <meta name="description" content="my personal website
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/2021/my-reading-statistics/">
+<link rel="canonical" href="/blog/2022/">
 
 
 <!-- Dark Mode -->
@@ -117,6 +117,8 @@
           
           
           
+          
+          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -156,62 +158,27 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      
-
-
-
-
-
-<div class="post">
+      <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">analyzing my reading statistics</h1>
-    <p class="post-meta">August 25, 2021</p>
-    <p class="post-tags">
-      <a href="/blog/2021"> <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-      
-        ·  
-        
-        <a href="/blog/tag/miscellaneous">
-          <i class="fas fa-hashtag fa-sm"></i> miscellaneous</a>  
-          
-      
-
-      
-
-    </p>
+    <h1 class="post-title"> <i class="fas fa-calendar fa-sm"></i> 2022 </h1>
+    <p class="post-description"> an archive of posts from this year </p>
   </header>
 
-  <article class="post-content">
-    <p>Tracking my data has always helped me keep up good habits. For books, I use <a href="https://goodreads.com" target="_blank" rel="noopener noreferrer">Goodreads</a>, despite the sometimes borderline unusable interface and a questionable color scheme.</p>
-
-<p>I decided to export my library and dig into my reading data a little bit. I used Jupyter Notebooks and Python (mainly pandas and matplotlib). The notebook is <a href="https://github.com/vss245/books-analysis/" target="_blank" rel="noopener noreferrer">here</a>.</p>
-
-<p><img src="/assets/img/dash.png" style="zoom:50%;"></p>
-
-<p>Interesting insights:</p>
-
-<ul>
-  <li>Some genres to explore that I haven’t read much: history, philosophy and poetry.</li>
-  <li>I have a pretty clear bias in my author countries (I’m reading a bit more German-speaking authors in German now)</li>
-  <li>Publication year had to be cut off, because reading some Greek tradegies messes up the axes. Still, I’m surprised at how many “modern” (e.g. post 1950s) books I read.</li>
-  <li>It’s not very straightforward to find the gender of authors - would be interesting to look at the distribution as well.</li>
-</ul>
-
-<p>Some things I found and learned along the way:</p>
-
-<ul>
-  <li>Pandas has a <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html" target="_blank" rel="noopener noreferrer">‘to_datetime’</a> method that allows for extraction of any part of the date and other such operations (file that under ‘no need to reinvent the wheel’). The downloaded data had pretty wonky reading statistics (date read was recorded correctly on the website, but not in the CSV), so I ended up not using it as much.</li>
-  <li>Python has a <a href="https://docs.python-requests.org/en/master/" target="_blank" rel="noopener noreferrer">‘requests’</a> package that deals with APIs, it’s actually fairly simple to use. I tried to use the OpenLibrary API to find the book genre, but since it doesn’t provide it, I had to use my existing shelves.</li>
-  <li>Matplotlib has a lot of good looking color <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html" target="_blank" rel="noopener noreferrer">schemes</a>.</li>
-  <li>I used the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank" rel="noopener noreferrer">Wikidata</a> API to find the country of origin: the description of most authors had their nationality first. If it didn’t, I discarded it. I used a list of <a href="https://github.com/knowitall/chunkedextractor/blob/master/src/main/resources/edu/knowitall/chunkedextractor/demonyms.csv" target="_blank" rel="noopener noreferrer">demonyms</a> to convert this to country. Kind of convoluted, but it worked.</li>
-  <li>Geopandas can be used to plot geographical data - I used Counter to count up the countries, converted this dict to a data frame and then to a Geopandas data frame (side note: Geopandas did not work without its own dedicated environment)</li>
-</ul>
-
-
+  <article>
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        
+        <tr>
+          <th scope="row">Jan 30, 2022</th>
+          <td>
+              <a class="post-link" href="/blog/2022/shitty-future/">shitty future</a>
+          </td>
+        </tr>
+      
+      </table>
+    </div>
   </article>
-
-  
 
 </div>
 

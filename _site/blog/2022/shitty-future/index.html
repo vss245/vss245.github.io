@@ -12,7 +12,7 @@
   Veronika Shamova
 
 
-  | analyzing my reading statistics
+  | shitty future
 
 </title>
 <meta name="description" content="my personal website
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/2021/my-reading-statistics/">
+<link rel="canonical" href="/blog/2022/shitty-future/">
 
 
 <!-- Dark Mode -->
@@ -165,10 +165,10 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">analyzing my reading statistics</h1>
-    <p class="post-meta">August 25, 2021</p>
+    <h1 class="post-title">shitty future</h1>
+    <p class="post-meta">January 30, 2022</p>
     <p class="post-tags">
-      <a href="/blog/2021"> <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+      <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
       
         ·  
         
@@ -183,30 +183,41 @@
   </header>
 
   <article class="post-content">
-    <p>Tracking my data has always helped me keep up good habits. For books, I use <a href="https://goodreads.com" target="_blank" rel="noopener noreferrer">Goodreads</a>, despite the sometimes borderline unusable interface and a questionable color scheme.</p>
+    <p>I’m tired of the future. The Twitter account <a href="https://twitter.com/Shitty_Future" target="_blank" rel="noopener noreferrer">Shitty Future</a> perfectly encapsulates how I feel about the avalanche-like growth of tech (and hype).</p>
 
-<p>I decided to export my library and dig into my reading data a little bit. I used Jupyter Notebooks and Python (mainly pandas and matplotlib). The notebook is <a href="https://github.com/vss245/books-analysis/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>Who doesn’t want a piece of artificial intelligence? It sounds so impressive. Intelligence can be somewhat loosely defined as the capacity for logic, abstract reasoning, decision-making, self-awareness and critical thinking. When you hear “artificial intelligence”, you might even imagine an artificial being possessing these qualities, but here’s where you might be wrong.</p>
 
-<p><img src="/assets/img/dash.png" style="zoom:50%;"></p>
+<h3 id="the-all-knowing-algorithm">The all-knowing algorithm</h3>
 
-<p>Interesting insights:</p>
+<p>What people call AI (or machine learning) can vary. Linear regression is often the first method you look at in machine learning classes. The idea is simple: you assume your data is described by a line and you learn how to draw that line so that it’s a good fit.</p>
 
-<ul>
-  <li>Some genres to explore that I haven’t read much: history, philosophy and poetry.</li>
-  <li>I have a pretty clear bias in my author countries (I’m reading a bit more German-speaking authors in German now)</li>
-  <li>Publication year had to be cut off, because reading some Greek tradegies messes up the axes. Still, I’m surprised at how many “modern” (e.g. post 1950s) books I read.</li>
-  <li>It’s not very straightforward to find the gender of authors - would be interesting to look at the distribution as well.</li>
-</ul>
+<p>Neural networks, while more complex, are also ultimately a powerful but simple idea: instead of a line, you have layers of interconnected units with parameters. If you find the right parameters, this network can be used to predict the output for new data. In practice, one layer of units is not enough to capture the complexity of data, so more layers are added.</p>
 
-<p>Some things I found and learned along the way:</p>
+<p>The more complicated the method is, the harder it is to interpret the model it created. When you have a giant network of units that feed signals back and forth predicting complex output (or even <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">two networks competing with each other to generate output</a>), can you really tell what your model based its output on? And can you trust its “judgement”?</p>
 
-<ul>
-  <li>Pandas has a <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html" target="_blank" rel="noopener noreferrer">‘to_datetime’</a> method that allows for extraction of any part of the date and other such operations (file that under ‘no need to reinvent the wheel’). The downloaded data had pretty wonky reading statistics (date read was recorded correctly on the website, but not in the CSV), so I ended up not using it as much.</li>
-  <li>Python has a <a href="https://docs.python-requests.org/en/master/" target="_blank" rel="noopener noreferrer">‘requests’</a> package that deals with APIs, it’s actually fairly simple to use. I tried to use the OpenLibrary API to find the book genre, but since it doesn’t provide it, I had to use my existing shelves.</li>
-  <li>Matplotlib has a lot of good looking color <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html" target="_blank" rel="noopener noreferrer">schemes</a>.</li>
-  <li>I used the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank" rel="noopener noreferrer">Wikidata</a> API to find the country of origin: the description of most authors had their nationality first. If it didn’t, I discarded it. I used a list of <a href="https://github.com/knowitall/chunkedextractor/blob/master/src/main/resources/edu/knowitall/chunkedextractor/demonyms.csv" target="_blank" rel="noopener noreferrer">demonyms</a> to convert this to country. Kind of convoluted, but it worked.</li>
-  <li>Geopandas can be used to plot geographical data - I used Counter to count up the countries, converted this dict to a data frame and then to a Geopandas data frame (side note: Geopandas did not work without its own dedicated environment)</li>
-</ul>
+<p>The allure of saying “an algorithm decided this” seems to be too high, even if the people saying it do not understand the algorithm in the slightest. There is a tendency to <a href="https://link.springer.com/article/10.1007/s11023-019-09506-6" target="_blank" rel="noopener noreferrer">anthropomorphize AI</a> and even imagine it as an omniscient being - the website <a href="https://blog.betterimagesofai.org/" target="_blank" rel="noopener noreferrer">Images of AI</a> is dedicated to finding better depictions of AI in the media, ideally those that don’t include pondering robots and a disturbing abundance of the color blue.</p>
+
+<p><img src="/assets/img/ai.png" alt="google img search results for ai" style="zoom:50%;"></p>
+
+<h3 id="do-androids-dream-of-anything">Do androids dream of anything?</h3>
+
+<p>A question that has plagued the field since the infamour Turing test (and possibly before) is - do algorithms actually <em>understand</em> what they do? (Aside: I will not talk about the Chinese room thought experiment, mostly because I find thought experiments like that annoying).</p>
+
+<p>However, there have been interesting developments in this question. In particular, <a href="https://www.quantamagazine.org/what-does-it-mean-for-ai-to-understand-20211216/" target="_blank" rel="noopener noreferrer">this article by Melanie Mitchell</a> talks about GPT-3, a famous language generation model that scores suspiciously high on questions that test understanding on ambiguous sentences (example: <em>I poured water from the bottle into the cup until it was full. What was full, the bottle or the cup?</em>). A lot of knowledge and assumptions that we take for granted are simply absent from models, which in turns influences how they behave.</p>
+
+<h3 id="time-is-a-flat-circle">Time is a flat circle</h3>
+
+<p>But, to come back to the less philosophical topic at hand: the humans behind the AI. There is no new thing under the sun, and if someone invented physiognomics or eugenics once, they will be unfortunately invented again.</p>
+
+<p>In the field of AI, common sense had not deterred people from: <a href="https://venturebeat.com/2021/01/11/outlandish-stanford-facial-recognition-study-claims-there-are-links-between-facial-features-and-political-orientation/" target="_blank" rel="noopener noreferrer">detecting someone’s profession from their photo</a>, <a href="https://www.gsb.stanford.edu/faculty-research/publications/deep-neural-networks-are-more-accurate-humans-detecting-sexual" target="_blank" rel="noopener noreferrer">detecting sexual orientation from pictures</a>, <a href="https://www.huffpost.com/entry/deepfake-tool-nudify-women_n_6112d765e4b005ed49053822" target="_blank" rel="noopener noreferrer">digitally undressing people</a>, <a href="https://speech2face.github.io/" target="_blank" rel="noopener noreferrer">generating faces of people from their speech</a>, <a href="https://en.wikipedia.org/wiki/Deepfake" target="_blank" rel="noopener noreferrer">putting people’s faces in videos (including pretty compromising ones)</a>, <a href="https://www.bbc.com/news/world-australia-58571618" target="_blank" rel="noopener noreferrer">recognizing people’s ethnicity from their faces</a>, <a href="https://www.technologyreview.com/2021/08/13/1031836/ai-ethics-responsible-data-stewardship/" target="_blank" rel="noopener noreferrer">including people’s photos in databases without their consent</a>, and <a href="https://aclanthology.org/D19-1667/" target="_blank" rel="noopener noreferrer">predicting prison sentences from legal cases</a> (some researchers, like the author of the sexuality detection paper, even had the audacity to claim that they are exposing threats to the LGBT community instead of, clearly, being a threat themselves).</p>
+
+<p>An excellent <a href="https://arxiv.org/pdf/2106.15590.pdf" target="_blank" rel="noopener noreferrer">paper by Birhane et al, 2021</a> identifies implicit values that are upheld within machine learning research. Perhaps unsurprisingly, “performance”, “novelty” and “generalization” are at the forefront, while “useful”, “easy to implement” and “interpretable” are somewhere in the middle. “Fairness”, “justice” and other similar concepts have been relegated to the end. While it might seem alarmist to call an entire field completely oblivious to fairness and bias, the ever-growing kaiju battle/arms race of gigantic models to outperform each other on some arbitrary benchmark does seem concerning.</p>
+
+<h3 id="extra-credit">Extra credit</h3>
+
+<p>If you want to feel even less optimistic about the future, check out <a href="https://web3isgoinggreat.com/" target="_blank" rel="noopener noreferrer">Web3 is doing great!</a>, an astonishing collage of incompetence, malice and stupidity of NFT and crypto-bros (the Venn diagram of people into NFTs and those who think AI will take over the world is probably a circle).</p>
+
+<p>If you dislike a certain billionaire as much as I do, check out a very cool <a href="https://twitter.com/tdverstynen/status/1485321117065695243" target="_blank" rel="noopener noreferrer">Twitter thread</a> taking apart his latest nonsense.</p>
 
 
   </article>
