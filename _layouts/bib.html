@@ -34,7 +34,7 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-          
+
           {% if forloop.length == 1 %}
             {% if author_is_self %}
               <em>{{author.last}}, {{author.first}}</em>
@@ -71,7 +71,11 @@
       {% if entry.type == "article" %}
         <em>{{entry.journal}}</em>
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
+      <em>In {{entry.booktitle}}</em>
+      {% elsif entry.type == "poster" %}
+      <em>{{entry.conference}}</em>
+      {% elsif entry.type == "mastersthesis" %}
+      {{entry.school}}
       {% endif %}
       {% if entry.month %}
         {{entry.month | capitalize}}
