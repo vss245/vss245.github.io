@@ -17,9 +17,6 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
+Hi, I’m Veronika. I’m interested in data analysis, neuroscience, coding and art. I have a background in neuroscience and computer science, and I've done some academic work in the field of computational neuroscience.
 
-Hi, I’m Veronika. I’m interested in analyzing data, neuroscience, coding, machine learning and art.
-
-I have a background in computational neuroscience: I did a BSc in Neuroscience and Computer Science at NYU, a [MSc](/projects/msc/) in Neural Systems and Computation at the University of Zürich and ETH Zürich, with some work experience in different neuroscience labs.
-
-In my spare time, I like to write about [write about science and other stuff](/blog) as well as tinker with coding projects, make art and music. This website is still a work in progress.
+In my spare time, I like to write about science, data projects and other things as well as make art and music. This website is still a work in progress and infrequently updated.
