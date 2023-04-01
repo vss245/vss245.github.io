@@ -1,0 +1,23 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: Hi, I'm Veronika. I’m a data scientist interested in science, coding and art. You can find my blog and miscellaneous info about me on this page.
+  - title: more about me
+    url: about.html
+
+  - title: recent posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
+
+  - title: links
+    entries:
+      - title: ✉️ email
+        url: mailto:vss245[at]nyu.edu
+      - title: 👾 github
+        url: https://github.com/vss245
+      - title: 🐦 twitter
+        url: https://twitter.com/vss245

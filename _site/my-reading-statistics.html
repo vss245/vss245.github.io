@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>analyzing my reading statistics</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="analyzing my reading statistics" />
+<meta name="author" content="Veronika Shamova" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="firing up Jupyter to dig around my own data" />
+<meta property="og:description" content="firing up Jupyter to dig around my own data" />
+<link rel="canonical" href="http://localhost:4000/my-reading-statistics.html" />
+<meta property="og:url" content="http://localhost:4000/my-reading-statistics.html" />
+<meta property="og:site_name" content="Veronika Shamova" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-25T16:30:50+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="analyzing my reading statistics" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Veronika Shamova"},"url":"http://localhost:4000/my-reading-statistics.html","description":"firing up Jupyter to dig around my own data","@type":"BlogPosting","headline":"analyzing my reading statistics","dateModified":"2021-08-25T16:30:50+02:00","datePublished":"2021-08-25T16:30:50+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/my-reading-statistics.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Veronika Shamova" /><link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">..</a><article>
+  <p class="post-meta">
+    <time datetime="2021-08-25 16:30:50 +0200">2021-08-25</time>
+  </p>
+  
+  <h1>analyzing my reading statistics</h1>
+
+  <p>Tracking my data has always helped me keep up good habits. For books, I use <a href="https://goodreads.com">Goodreads</a>, despite the sometimes borderline unusable interface and a questionable color scheme.</p>
+
+<p>I decided to export my library and dig into my reading data a little bit. I used Jupyter Notebooks and Python (mainly pandas and matplotlib). The notebook is <a href="https://github.com/vss245/books-analysis/">here</a>.</p>
+
+<p><img src="/assets/img/dash.png" style="zoom:50%;" /></p>
+
+<p>Interesting insights:</p>
+
+<ul>
+  <li>Some genres to explore that I haven’t read much: history, philosophy and poetry.</li>
+  <li>I have a pretty clear bias in my author countries (I’m reading a bit more German-speaking authors in German now)</li>
+  <li>Publication year had to be cut off, because reading some Greek tradegies messes up the axes. Still, I’m surprised at how many “modern” (e.g. post 1950s) books I read.</li>
+  <li>It’s not very straightforward to find the gender of authors - would be interesting to look at the distribution as well.</li>
+</ul>
+
+<p>Some things I found and learned along the way:</p>
+
+<ul>
+  <li>Pandas has a <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html">‘to_datetime’</a> method that allows for extraction of any part of the date and other such operations (file that under ‘no need to reinvent the wheel’). The downloaded data had pretty wonky reading statistics (date read was recorded correctly on the website, but not in the CSV), so I ended up not using it as much.</li>
+  <li>Python has a <a href="https://docs.python-requests.org/en/master/">‘requests’</a> package that deals with APIs, it’s actually fairly simple to use. I tried to use the OpenLibrary API to find the book genre, but since it doesn’t provide it, I had to use my existing shelves.</li>
+  <li>Matplotlib has a lot of good looking color <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">schemes</a>.</li>
+  <li>I used the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> API to find the country of origin: the description of most authors had their nationality first. If it didn’t, I discarded it. I used a list of <a href="https://github.com/knowitall/chunkedextractor/blob/master/src/main/resources/edu/knowitall/chunkedextractor/demonyms.csv">demonyms</a> to convert this to country. Kind of convoluted, but it worked.</li>
+  <li>Geopandas can be used to plot geographical data - I used Counter to count up the countries, converted this dict to a data frame and then to a Geopandas data frame (side note: Geopandas did not work without its own dedicated environment)</li>
+</ul>
+
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
